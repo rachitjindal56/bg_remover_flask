@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>
+            BackGround Removal
+        </title>
+        <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <div class="card text-center">
+            <div class="row">
+                <div class="col">
+            
+                  <h1>Upload an image</h1>
+                  <hr>
+            
+                  <form action="/" method="POST" enctype="multipart/form-data">
+            
+                    <div class="form-group mb-5">
+                      <label class="custom-file mb-4"><h3>Choose an image</h3></label>
+
+                      <div class="custom-file mb-2">
+                        <input type="file" class="custom-file-input" name="image" id="image">
+                      </div>
+
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary">Upload</button>
+            
+                  </form>
+            
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="row">
+              <div class="col">
+          
+                <h1>Upload an image</h1>
+                <hr>
+          
+                <form action="/" method="POST" enctype="multipart/form-data">
+          
+                  <div class="form-group">
+                    <label>Select image</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" name="image" id="image">
+                      <label class="custom-file-label" for="image">Select image...</label>
+                    </div>
+                  </div>
+          
+                  <button type="submit" class="btn btn-primary">Upload</button>
+          
+                </form>
+          
+              </div>
+            </div>
+          </div> -->
+    </body>
+</html>

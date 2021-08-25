@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>
+            The Final Image
+        </title>
+        <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+              <div class="col">
+
+                <!-- <figure class="figure">
+                    <img src="{{ url_for('static', filename=filename) }}" class="figure-img img-fluid rounded" alt="...">
+                    <img src="{{ url_for('static', filename=filename) }}" class="rounded mx-auto d-block" alt="...">
+                    <figcaption class="figure-caption text-end">The output image</figcaption>
+                </figure> -->
+                <div class="card bg-dark text-dark col-md-4">
+                    <img src="{{ url_for('static', filename=filename) }}" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+          
+        <a href="/" type="button" class="btn btn-danger">Exit</button>
+        <a href = "/download/{{ filename }}" type="button" class="btn btn-success">Download</button>
+    </body>
+</html>
